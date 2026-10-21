@@ -5,7 +5,7 @@ public abstract class Animal {
     int happiness;
     int time;
 
-    public Animal (String name, int age, int hunger, int hapiness, int time) {
+    public Animal (String name, int age, int hunger, int happiness, int time) {
         this.name = name;
         this.age = age;
         this.hunger = hunger;
