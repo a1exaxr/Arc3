@@ -16,6 +16,23 @@ public abstract class Animal {
     //methods
     public abstract void eating();
 
+    public abstract void makeSound();
+
+    public void feed() {
+        hunger = hunger - 10;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness ;//time?
+    }
+
+
+
 //testing
     //testing 2
 

@@ -1,14 +1,15 @@
 public class Lion extends Animal{
 
+    private double territorySizeFt;
 
-
-    public Lion (String name, int age, int hunger, int happiness, int time) {
+    public Lion (String name, int age, int hunger, int happiness, int time, double territorySizeFt) {
         super(name, age, hunger, happiness, time);
         this.name = name;
         this.age = age;
         this.hunger = hunger;
         this.happiness = happiness;
         this.time = time;
+        this.territorySizeFt =  territorySizeFt;
     }
 
 
@@ -20,6 +21,16 @@ public class Lion extends Animal{
 @Override
     public void eating(){
 
+
+
 }
 
+
+
+
+
+    @Override
+    public void makeSound(){
+
+    }
 }
