@@ -2,13 +2,8 @@ public class Lion extends Animal{
 
     private double territorySizeFt;
 
-    public Lion (String name, int age, int hunger, int happiness, int time, double territorySizeFt) {
+    public Lion(String name, int age, int hunger, int happiness, int time, double territorySizeFt) {
         super(name, age, hunger, happiness, time);
-        this.name = name;
-        this.age = age;
-        this.hunger = hunger;
-        this.happiness = happiness;
-        this.time = time;
         this.territorySizeFt =  territorySizeFt;
     }
 
@@ -16,7 +11,7 @@ public class Lion extends Animal{
 
 
 
-
+//testing 3
 
 @Override
     public void eating(){
