@@ -8,12 +8,13 @@ public class Penguin extends Animal{
 
     @Override
     public void eating(){
+        System.out.println(getName() + " eats fish.");
 
     }
 
 
     @Override
     public void makeSound(){
-
+        System.out.println(getName() + " squawks!");
     }
 }

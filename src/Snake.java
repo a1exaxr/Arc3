@@ -8,12 +8,13 @@ private int slitherSpeed;
 
     @Override
     public void eating(){
+        System.out.println(getName() + " eats whole prey.");
 
     }
 
 
     @Override
     public void makeSound(){
-
+        System.out.println(getName() + " hisses!");
     }
 }

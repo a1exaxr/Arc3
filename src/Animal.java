@@ -1,9 +1,9 @@
 public abstract class Animal{
-    String name;
-    int age;
-    int hunger;
-    int happiness;
-    int time;
+   private String name;
+    private int age;
+    private int hunger;
+    private int happiness;
+    private int time;
 
     public Animal (String name, int age, int hunger, int happiness, int time) {
         this.name = name;
@@ -26,9 +26,14 @@ public abstract class Animal{
         return name;
     }
 
+    public int getHunger() {
+        return hunger;
+    }
+
+
     @Override
     public String toString() {
-        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness ;//time?
+        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time;
     }
 
 
