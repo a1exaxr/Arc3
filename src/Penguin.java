@@ -1,4 +1,4 @@
-public class Penguin extends Animal{
+public class Penguin extends Animal implements Swimmer{
  private int swimSpeed;
     public Penguin (String name, int age, int hunger, int happiness, int time, int swimSpeed) {
         super(name, age, hunger, happiness, time);
@@ -16,5 +16,12 @@ public class Penguin extends Animal{
     @Override
     public void makeSound(){
         System.out.println(getName() + " squawks!");
+    }
+
+    //implements
+
+    @Override
+    public void swim() {
+        System.out.println(getName() + " swims through the water!");
     }
 }
