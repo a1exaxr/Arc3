@@ -36,11 +36,4 @@ public abstract class Animal{
         return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time;
     }
 
-
-
-//testing
-    //testing 2
-
-
-
 }

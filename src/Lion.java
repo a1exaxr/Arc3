@@ -9,20 +9,12 @@ public class Lion extends Animal{
 
 
 
-
-
-//testing 3
-
 @Override
     public void eating(){
 
     System.out.println(getName() + " eats meat.");
 
 }
-
-
-
-
 
     @Override
     public void makeSound(){
