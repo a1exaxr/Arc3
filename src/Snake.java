@@ -17,4 +17,11 @@ private int slitherSpeed;
     public void makeSound(){
         System.out.println(getName() + " hisses!");
     }
+
+    @Override
+    public String toCsv(){
+        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Slither Speed: " + slitherSpeed;
+
+
+    }
 }

@@ -1,9 +1,9 @@
 public abstract class Animal{
-   private String name;
-    private int age;
-    private int hunger;
-    private int happiness;
-    private int time;
+   protected String name;
+    protected int age;
+    protected int hunger;
+    protected int happiness;
+    protected int time;
 
     public Animal (String name, int age, int hunger, int happiness, int time) {
         this.name = name;
@@ -35,5 +35,10 @@ public abstract class Animal{
     public String toString() {
         return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time;
     }
+
+    //Arc 4 Phase 1
+    public abstract String toCsv();
+
+
 
 }

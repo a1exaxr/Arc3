@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.io.FileWriter;
 public class Main{
     public static void main(String[] args){
 
@@ -27,6 +27,16 @@ public class Main{
         for (Swimmer s : swimmers) {
             s.swim();
         }
+
+try {FileWriter writer = new FileWriter("save.txt");
+    for (Animal a : habitat) {
+        writer.write(a.toCsv() + "\n"); // one object per line
+    }
+    writer.close(); // CRITICAL — flushes and releases the file
+} catch(Exception e) {throw new RuntimeException(e);};
+
+
+
 
     }
 }

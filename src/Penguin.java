@@ -22,4 +22,12 @@ public class Penguin extends Animal implements Swimmer{
     public void swim() {
         System.out.println(getName() + " swims through the water!");
     }
+
+
+    @Override
+    public String toCsv(){
+        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Swim Speed: " + swimSpeed;
+
+
+    }
 }

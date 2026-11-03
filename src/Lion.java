@@ -20,4 +20,13 @@ public class Lion extends Animal{
     public void makeSound(){
         System.out.println(getName() + " roars!");
     }
+
+
+
+    @Override
+    public String toCsv(){
+            return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Territory Size in feet: " + territorySizeFt;
+
+
+    }
 }
