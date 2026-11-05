@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 import java.io.FileWriter;
+import java.io.File;
+import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
 
@@ -36,6 +38,12 @@ try {FileWriter writer = new FileWriter("save.txt");
 } catch(Exception e) {throw new RuntimeException(e);};
 
 
+        Scanner fileScanner = new Scanner(new File("save.txt"));
+        while (fileScanner.hasNextLine()) {
+            String line = fileScanner.nextLine();
+            // ... turn this line into an object ...
+        }
+        fileScanner.close();
 
 
     }
