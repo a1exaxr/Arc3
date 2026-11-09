@@ -1,0 +1,5 @@
+Lion,Bob,2,100,100,2,5.0
+Penguin,Pete,3,80,90,1,20
+Snake,Sly,4,60,70,3,null
+Dolphin,Dollylolly,5,50,100,2
+//

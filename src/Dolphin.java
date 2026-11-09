@@ -19,4 +19,12 @@ public class Dolphin extends Animal implements Swimmer {
     public void swim() {
         System.out.println(getName() + " swims through the ocean!");
     }
+
+
+    @Override
+    public String toCsv() {
+        return "Dolphin," + name + "," + age + "," + hunger + "," + happiness + "," + time;
+    }
+
 }
+//

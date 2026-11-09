@@ -24,9 +24,8 @@ public class Lion extends Animal{
 
 
     @Override
-    public String toCsv(){
-            return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Territory Size in feet: " + territorySizeFt;
-
-
+    public String toCsv() {
+        return "Lion," + name + "," + age + "," + hunger + "," + happiness + "," + time + "," + territorySizeFt;
     }
 }
+//

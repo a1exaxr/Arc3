@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.io.FileWriter;
 import java.io.File;
 import java.util.Scanner;
+import java.io.FileNotFoundException;
 public class Main{
     public static void main(String[] args){
 
@@ -30,21 +31,47 @@ public class Main{
             s.swim();
         }
 
-try {FileWriter writer = new FileWriter("save.txt");
-    for (Animal a : habitat) {
-        writer.write(a.toCsv() + "\n"); // one object per line
-    }
-    writer.close(); // CRITICAL — flushes and releases the file
-} catch(Exception e) {throw new RuntimeException(e);};
-
-
-        Scanner fileScanner = new Scanner(new File("save.txt"));
-        while (fileScanner.hasNextLine()) {
-            String line = fileScanner.nextLine();
-            // ... turn this line into an object ...
+        try {
+            FileWriter writer = new FileWriter("save.txt");
+            for (Animal a : habitat) {
+                writer.write(a.toCsv() + "\n");
+            }
+            writer.close();
+            System.out.println("Animals successfully saved!");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-        fileScanner.close();
+
+        try {
+            Scanner fileScanner = new Scanner(new File("save.txt"));
+            while (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine();
+                String[] data = line.split(",");
+                // We'll use these values to recreate each animal.
+            }
+            fileScanner.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+        }
 
 
+//
+
+        try {
+            Scanner fileScanner = new Scanner(new File("save.txt"));
+
+            while (fileScanner.hasNextLine()) {
+                String line = fileScanner.nextLine();
+                // ... turn this line into an object ...
+            }
+
+            fileScanner.close();
+
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+        }
+
+        System.out.println(new File("save.txt").getAbsolutePath());
     }
 }
+

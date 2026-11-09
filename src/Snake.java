@@ -1,5 +1,7 @@
 public class Snake extends Animal{
 
+    private String length;
+
 private int slitherSpeed;
     public Snake (String name, int age, int hunger, int happiness, int time, int slitherSpeed) {
         super(name, age, hunger, happiness, time);
@@ -19,9 +21,9 @@ private int slitherSpeed;
     }
 
     @Override
-    public String toCsv(){
-        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Slither Speed: " + slitherSpeed;
-
-
+    public String toCsv() {
+        return "Snake," + name + "," + age + "," + hunger + "," + happiness + "," + time + "," + length;
     }
+
 }
+//

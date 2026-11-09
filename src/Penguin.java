@@ -23,11 +23,9 @@ public class Penguin extends Animal implements Swimmer{
         System.out.println(getName() + " swims through the water!");
     }
 
-
     @Override
-    public String toCsv(){
-        return "Name: " + name + ", Age: " + age + ", Hunger: " + hunger +", Happiness: " + happiness+ ", Time: " + time + ", Swim Speed: " + swimSpeed;
-
-
+    public String toCsv() {
+        return "Penguin," + name + "," + age + "," + hunger + "," + happiness + "," + time + "," + swimSpeed;
     }
 }
+//
